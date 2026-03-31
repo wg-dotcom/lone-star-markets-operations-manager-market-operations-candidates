@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aneesh N. - Operations Manager (Market Operations) | Lone Star Markets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument%20Serif:wght@400;500;600;700&family=DM%20Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --primary: #c17b4e;
+      --dark: #1e2924;
+      --highlight: #c9c0b4;
+      --white: #FFFFFF;
+      --gray-50: #F8FAFB;
+      --gray-100: #F1F5F4;
+      --gray-200: #E2E8E7;
+      --gray-400: #94A3A0;
+      --gray-600: #4B5E5A;
+      --gray-700: #374845;
+      --font-heading: 'Instrument Serif', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+    }
+    body { font-family: var(--font-body); background: var(--gray-50); color: var(--dark); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    .back-link { display: block; background: var(--dark); padding: 12px 40px; font-family: var(--font-heading); font-size: 14px; font-weight: 500; }
+    .back-link a { color: var(--highlight); text-decoration: none; transition: color 0.2s; }
+    .back-link a:hover { color: var(--white); }
+    .back-link a::before { content: "\2190\00a0\00a0"; }
+    header { background: var(--dark); padding: 48px 40px 52px; position: relative; overflow: hidden; }
+    header::after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--primary), var(--highlight)); }
+    .header-brand { font-family: var(--font-heading); font-size: 32px; font-weight: 700; color: var(--white); letter-spacing: -0.5px; margin-bottom: 4px; }
+    .header-brand span { color: var(--highlight); }
+    .header-subtitle { font-family: var(--font-body); font-size: 14px; font-weight: 400; color: var(--gray-400); text-transform: uppercase; letter-spacing: 2px; }
+    .candidate-banner { background: linear-gradient(135deg, var(--primary), #c9c0b4); padding: 36px 40px; color: var(--white); }
+    .candidate-name { font-family: var(--font-heading); font-size: 28px; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 6px; }
+    .candidate-title { font-size: 16px; font-weight: 400; opacity: 0.9; margin-bottom: 12px; }
+    .candidate-contact { display: flex; flex-wrap: wrap; gap: 20px; font-size: 13px; opacity: 0.85; }
+    .resume-body { max-width: 900px; margin: 0 auto; padding: 40px 40px 60px; }
+    .section { margin-bottom: 36px; }
+    .section-title { font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1.5px; padding-bottom: 10px; border-bottom: 2px solid var(--gray-200); margin-bottom: 18px; }
+    .summary-text { font-size: 15px; color: var(--gray-700); line-height: 1.75; }
+    .skills-grid { display: grid; grid-template-columns: 170px 1fr; gap: 10px 20px; font-size: 14px; }
+    .skill-label { font-weight: 600; color: var(--dark); padding: 4px 0; }
+    .skill-value { color: var(--gray-600); padding: 4px 0; line-height: 1.6; }
+    .experience-item { margin-bottom: 24px; padding-left: 20px; border-left: 3px solid var(--primary); }
+    .experience-item:last-child { margin-bottom: 0; }
+    .exp-header { margin-bottom: 8px; }
+    .exp-role { font-family: var(--font-heading); font-size: 16px; font-weight: 700; color: var(--dark); }
+    .exp-company { font-size: 14px; font-weight: 500; color: var(--primary); }
+    .exp-meta { font-size: 13px; color: var(--gray-400); margin-top: 2px; }
+    .exp-desc { font-size: 14px; color: var(--gray-600); line-height: 1.65; }
+    .exp-bullets { font-size: 14px; color: var(--gray-600); line-height: 1.65; padding-left: 20px; margin-top: 6px; }
+    .exp-bullets li { margin-bottom: 4px; }
+    .education-item, .cert-item, .lang-item { font-size: 15px; margin-bottom: 8px; }
+    .edu-degree, .cert-name { font-weight: 600; color: var(--dark); }
+    .edu-school { color: var(--primary); font-weight: 500; }
+    .edu-year { font-size: 13px; color: var(--gray-400); }
+    footer { background: var(--dark); padding: 32px 40px; text-align: center; position: relative; }
+    footer::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--highlight)); }
+    .footer-text { font-family: var(--font-heading); font-size: 14px; color: var(--gray-400); }
+    .footer-text strong { color: var(--white); }
+    .footer-text .accent { color: var(--highlight); }
+    .footer-sub { font-size: 12px; color: var(--gray-600); margin-top: 8px; }
+    @media (max-width: 640px) {
+      header, .candidate-banner, .resume-body, .back-link, footer { padding-left: 20px; padding-right: 20px; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .candidate-contact { flex-direction: column; gap: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="back-link"><a href="index.html">Back to All Candidates</a></div>
+  <header>
+    <div class="header-brand">Lone Star Markets<span>.</span></div>
+    <div class="header-subtitle">Candidate Resume</div>
+  </header>
+  <div class="candidate-banner">
+    <div class="candidate-name">Aneesh N.</div>
+    <div class="candidate-title">Operations Manager (Market Operations) | India</div>
+    <div class="candidate-contact">
+      <span>India</span>
+      <span>4+ yrs Operations experience</span>
+    </div>
+  </div>
+  <div class="resume-body">
+    <div class="section"><div class="section-title">Professional Summary</div><p class="summary-text">Results-driven Operations Manager with 7+ years of cross-functional experience building scalable systems from the ground up in fast-growing technology companies. Proven track record of developing SOPs, automating operational workflows, and coordinating distributed teams across multiple locations. At SeaBuddy, I established entire digital and operational infrastructure from zero, including deployment pipelines, assessment platforms, and cross-functional coordination frameworks. Adept at translating early-stage operational chaos into structured, repeatable, high-reliability processes. Seeking to apply this execution-focused skillset to scale micro-market operations across U.S. locations.</p></div>
+    <div class="section"><div class="section-title">Skills &amp; Tech Stack</div><div class="skills-grid">
+    <div class="skill-label">SOP Development &amp; Process Management</div>
+    <div class="skill-value">SOP Development &amp; Operational Playbooks, Inventory &amp; Replenishment Workflow Design, Multi-Location Coordination</div>
+    <div class="skill-label">Team &amp; Stakeholder Management</div>
+    <div class="skill-value">Remote Team Management, Cross-Functional Stakeholder Coordination</div>
+    <div class="skill-label">Process Automation &amp; Tools</div>
+    <div class="skill-value">Power Automate, VBA, Windows Task Scheduler, Google Apps Script</div>
+    <div class="skill-label">Operations &amp; Reporting</div>
+    <div class="skill-value">Operational Reporting &amp; KPI Monitoring, New Site Launches &amp; Readiness Coordination, Systems Reliability &amp; Incident Management</div>
+    <div class="skill-label">Project &amp; Ops Tools</div>
+    <div class="skill-value">Notion, Asana, ClickUp, Trello, Google Workspace</div>
+    <div class="skill-label">Data &amp; Reporting</div>
+    <div class="skill-value">Excel (advanced), Google Sheets, structured dashboard design</div>
+    <div class="skill-label">Platform &amp; Infrastructure</div>
+    <div class="skill-value">Domain hosting (GoDaddy, Exabytes), Replit deployment, CMS operations</div></div></div>
+    <div class="section"><div class="section-title">Work Experience</div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Operations Manager</div>
+        <div class="exp-company">SeaBuddy (The Social Maritime Pte. Ltd.)</div>
+        <div class="exp-meta">Apr 2025 – Present</div>
+      </div>
+      <ul class="exp-bullets"><li>Led end-to-end operational build-out for a maritime wellness tech startup, establishing systems and infrastructure from zero baseline across multiple geographies.</li><li>Developed and documented comprehensive SOPs covering workflow execution, platform operations, assessment distribution, and cross-functional coordination across remote and on-the-ground teams.</li><li>Built and launched the MPARS psychological assessment platform end-to-end: from domain setup and hosting configuration (GoDaddy, Exabytes, Replit) to operational readiness across vessel and shore staff environments.</li><li>Designed and deployed automation workflows using Power Automate, VBA scripting, and Windows Task Scheduler to streamline repetitive operational tasks, including report parsing, notification dispatch, and data distribution to 4,000+ users.</li><li>Coordinated across licensed therapists, technical developers, and client HR departments to ensure scheduling, compliance, and reporting pipelines remained reliable and on schedule.</li><li>Created and maintained operational visibility tools including dashboards and structured reporting to give leadership actionable, data-ready insights on operational performance.</li><li>Led rollout of new platform versions and location-specific configurations, managing installation timelines and readiness checklists for each deployment.</li><li>Monitored operational health across multiple client accounts, identifying and resolving performance bottlenecks and communication gaps proactively.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Artificial Intelligence Specialist</div>
+        <div class="exp-company">IBM</div>
+        <div class="exp-meta">Jul 2024 – Apr 2025</div>
+      </div>
+      <ul class="exp-bullets"><li>Supervised quality assurance and training pipelines for large-scale AI models, maintaining documentation and compliance standards across iterative deployment cycles.</li><li>Coordinated with cross-functional teams on deployment schedules, performance monitoring, and process calibration to ensure model accuracy and reliability.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Schedule Administrator</div>
+        <div class="exp-company">Anuvu</div>
+        <div class="exp-meta">Aug 2022 – Jul 2024</div>
+      </div>
+      <ul class="exp-bullets"><li>Owned the full work order lifecycle: intake, prioritization, scheduling, cross-department coordination, and closure verification across a high-volume operations environment.</li><li>Maintained real-time operational visibility through structured tracking tools, flagging delays and ensuring SLA adherence across multiple simultaneous workstreams.</li><li>Developed scheduling templates and workflow documentation that reduced coordination overhead and improved on-time delivery rates.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Resolution Specialist</div>
+        <div class="exp-company">Amazon</div>
+        <div class="exp-meta">Jul 2018 – Aug 2022</div>
+      </div>
+      <ul class="exp-bullets"><li>Managed high-volume operational queues involving logistics, inventory discrepancies, and fulfillment escalations, consistently achieving resolution targets.</li><li>Identified recurring operational failure points and contributed to process improvement initiatives that reduced repeat escalations.</li><li>Maintained accurate records and reporting across multiple operational categories, supporting team leads with performance data.</li></ul>
+    </div></div>
+    <div class="section"><div class="section-title">Education</div>
+    <div class="education-item">
+      <div class="edu-degree">BCA – Computer Software &amp; Media Applications</div>
+      <div class="edu-school">Vikramaditya Group of Institutions</div>
+      
+    </div>
+    <div class="education-item">
+      <div class="edu-degree">Certified Software Programmer</div>
+      <div class="edu-school">Institute of Advanced Networking Technology</div>
+      
+    </div></div>
+    <div class="section"><div class="section-title">Certifications</div>
+    <div class="cert-item"><span class="cert-name">IBM Certification: Artificial Intelligence Fundamentals</span></div>
+    <div class="cert-item"><span class="cert-name">IBM Certification: Cybersecurity Fundamentals</span></div></div>
+    
+  </div>
+  <footer>
+    <div class="footer-text">Presented by <strong>Sagan</strong> for <strong class="accent">Lone Star Markets</strong></div>
+    <div class="footer-sub">getsagan.com · Redefining Recruitment</div>
+  </footer>
+</body>
+</html>
