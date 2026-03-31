@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruth R. - Operations Manager (Market Operations) | Lone Star Markets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument%20Serif:wght@400;500;600;700&family=DM%20Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --primary: #c17b4e;
+      --dark: #1e2924;
+      --highlight: #c9c0b4;
+      --white: #FFFFFF;
+      --gray-50: #F8FAFB;
+      --gray-100: #F1F5F4;
+      --gray-200: #E2E8E7;
+      --gray-400: #94A3A0;
+      --gray-600: #4B5E5A;
+      --gray-700: #374845;
+      --font-heading: 'Instrument Serif', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+    }
+    body { font-family: var(--font-body); background: var(--gray-50); color: var(--dark); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    .back-link { display: block; background: var(--dark); padding: 12px 40px; font-family: var(--font-heading); font-size: 14px; font-weight: 500; }
+    .back-link a { color: var(--highlight); text-decoration: none; transition: color 0.2s; }
+    .back-link a:hover { color: var(--white); }
+    .back-link a::before { content: "\2190\00a0\00a0"; }
+    header { background: var(--dark); padding: 48px 40px 52px; position: relative; overflow: hidden; }
+    header::after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--primary), var(--highlight)); }
+    .header-brand { font-family: var(--font-heading); font-size: 32px; font-weight: 700; color: var(--white); letter-spacing: -0.5px; margin-bottom: 4px; }
+    .header-brand span { color: var(--highlight); }
+    .header-subtitle { font-family: var(--font-body); font-size: 14px; font-weight: 400; color: var(--gray-400); text-transform: uppercase; letter-spacing: 2px; }
+    .candidate-banner { background: linear-gradient(135deg, var(--primary), #c9c0b4); padding: 36px 40px; color: var(--white); }
+    .candidate-name { font-family: var(--font-heading); font-size: 28px; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 6px; }
+    .candidate-title { font-size: 16px; font-weight: 400; opacity: 0.9; margin-bottom: 12px; }
+    .candidate-contact { display: flex; flex-wrap: wrap; gap: 20px; font-size: 13px; opacity: 0.85; }
+    .resume-body { max-width: 900px; margin: 0 auto; padding: 40px 40px 60px; }
+    .section { margin-bottom: 36px; }
+    .section-title { font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1.5px; padding-bottom: 10px; border-bottom: 2px solid var(--gray-200); margin-bottom: 18px; }
+    .summary-text { font-size: 15px; color: var(--gray-700); line-height: 1.75; }
+    .skills-grid { display: grid; grid-template-columns: 170px 1fr; gap: 10px 20px; font-size: 14px; }
+    .skill-label { font-weight: 600; color: var(--dark); padding: 4px 0; }
+    .skill-value { color: var(--gray-600); padding: 4px 0; line-height: 1.6; }
+    .experience-item { margin-bottom: 24px; padding-left: 20px; border-left: 3px solid var(--primary); }
+    .experience-item:last-child { margin-bottom: 0; }
+    .exp-header { margin-bottom: 8px; }
+    .exp-role { font-family: var(--font-heading); font-size: 16px; font-weight: 700; color: var(--dark); }
+    .exp-company { font-size: 14px; font-weight: 500; color: var(--primary); }
+    .exp-meta { font-size: 13px; color: var(--gray-400); margin-top: 2px; }
+    .exp-desc { font-size: 14px; color: var(--gray-600); line-height: 1.65; }
+    .exp-bullets { font-size: 14px; color: var(--gray-600); line-height: 1.65; padding-left: 20px; margin-top: 6px; }
+    .exp-bullets li { margin-bottom: 4px; }
+    .education-item, .cert-item, .lang-item { font-size: 15px; margin-bottom: 8px; }
+    .edu-degree, .cert-name { font-weight: 600; color: var(--dark); }
+    .edu-school { color: var(--primary); font-weight: 500; }
+    .edu-year { font-size: 13px; color: var(--gray-400); }
+    footer { background: var(--dark); padding: 32px 40px; text-align: center; position: relative; }
+    footer::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--highlight)); }
+    .footer-text { font-family: var(--font-heading); font-size: 14px; color: var(--gray-400); }
+    .footer-text strong { color: var(--white); }
+    .footer-text .accent { color: var(--highlight); }
+    .footer-sub { font-size: 12px; color: var(--gray-600); margin-top: 8px; }
+    @media (max-width: 640px) {
+      header, .candidate-banner, .resume-body, .back-link, footer { padding-left: 20px; padding-right: 20px; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .candidate-contact { flex-direction: column; gap: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="back-link"><a href="index.html">Back to All Candidates</a></div>
+  <header>
+    <div class="header-brand">Lone Star Markets<span>.</span></div>
+    <div class="header-subtitle">Candidate Resume</div>
+  </header>
+  <div class="candidate-banner">
+    <div class="candidate-name">Ruth R.</div>
+    <div class="candidate-title">Operations Manager (Market Operations) | El Salvador</div>
+    <div class="candidate-contact">
+      <span>El Salvador</span>
+      <span>6 yrs Operations experience</span>
+    </div>
+  </div>
+  <div class="resume-body">
+    <div class="section"><div class="section-title">Professional Summary</div><p class="summary-text">Operations &amp; Project Coordinator with 12+ years of experience managing end-to-end initiatives, coordinating cross-functional teams, and ensuring on-time project delivery in fast-paced environments. Experienced in managing multiple stakeholders, tracking project progress, and maintaining high service quality in customer-facing operations.</p></div>
+    <div class="section"><div class="section-title">Skills &amp; Tech Stack</div><div class="skills-grid">
+    <div class="skill-label">Operations Leadership</div>
+    <div class="skill-value">Service Operations, Workforce Management, SLA Recovery</div>
+    <div class="skill-label">Transformation</div>
+    <div class="skill-value">Lean Six Sigma, Process Re-engineering, Cost Optimization</div>
+    <div class="skill-label">Program Management</div>
+    <div class="skill-value">PMO, Cross-functional delivery, Global stakeholders communications, Timelines and delivery management</div>
+    <div class="skill-label">Tools</div>
+    <div class="skill-value">ClickUp, Monday, Miro, Lucidchart, Google Workspace, Excel</div>
+    <div class="skill-label">AI</div>
+    <div class="skill-value">Comfortable working with digital tools and automation platforms to improve operational workflows (ClickUp, Monday, Miro)</div></div></div>
+    <div class="section"><div class="section-title">Work Experience</div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Senior Program Manager – Business Process Excellence</div>
+        <div class="exp-company">TELUS DIGITAL</div>
+        <div class="exp-meta">July 2025 – March 2026</div>
+      </div>
+      <ul class="exp-bullets"><li>Led cost optimization program reducing operational expenses by 5%, improving labor efficiency at scale.</li><li>Improved Average Handle Time (AHT) by 3 minutes through process redesign in banking operations.</li><li>Reduced attrition and shrinkage by 11%, implementing data-driven workforce strategies.</li><li>Stabilized SLA performance for high-security clients, consistently meeting contractual targets.</li><li>Managed cross-functional global teams in a remote-first environment, aligning Ops, WFM, and Quality.</li><li>Managed competing priorities across initiatives, ensuring deadlines and quality standards were met.</li><li>Communicated with clients and internal stakeholders to align expectations and ensure service delivery.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Program Manager – Innovation &amp; GTM Strategy</div>
+        <div class="exp-company">TERNOVA</div>
+        <div class="exp-meta">2020 - 2025</div>
+      </div>
+      <ul class="exp-bullets"><li>Led validation of 40+ business models, assessing scalability, profitability, and impact.</li><li>Designed and executed international expansion strategy (Panama), doubling sales in 1 year.</li><li>Managed corporate innovation portfolio aligned with long-term strategic horizons.</li><li>Maintained accurate project tracking systems and performance dashboards.</li><li>Reported progress, risks, and key metrics to stakeholders</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Lean Six Sigma Engineer</div>
+        <div class="exp-company">TERNOVA</div>
+        <div class="exp-meta">2015 – 2020</div>
+      </div>
+      <ul class="exp-bullets"><li>Delivered 5% productivity increase and 3% waste reduction across operations.</li><li>Implemented Lean frameworks across manufacturing and shared services.</li><li>Trained 60+ employees in continuous improvement methodologies.</li><li>Reduced supply chain costs and improved inventory efficiency.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Cost Engineer</div>
+        <div class="exp-company">TERNOVA</div>
+        <div class="exp-meta">2013 – 2015</div>
+      </div>
+      <p class="exp-desc">Evaluate production feasibility for industrial flexible packaging and standardized production rates to ensure adherence to budgeted costs and margins.</p>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Quality Analyst</div>
+        <div class="exp-company">UNILEVER</div>
+        <div class="exp-meta">2011 – 2013</div>
+      </div>
+      <p class="exp-desc">Coordinated standardized laboratory testing for packaging materials and managed supplier performance to prevent quality defects in production.</p>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Customer Service Analyst (Avianca Account)</div>
+        <div class="exp-company">ATENTO</div>
+        <div class="exp-meta">2007 – 2011</div>
+      </div>
+      <ul class="exp-bullets"><li>Managed high-volume customer interactions for international airline accounts, ensuring resolution of complex service requests.</li><li>Handled escalations and time-sensitive issues, maintaining customer satisfaction under pressure.</li><li>Communicated clearly with customers to set expectations and resolve issues efficiently.</li></ul>
+    </div></div>
+    <div class="section"><div class="section-title">Education</div>
+    <div class="education-item">
+      <div class="edu-degree">B.S. in Industrial Engineering</div>
+      <div class="edu-school">Universidad de El Salvador</div>
+      <div class="edu-year">2014</div>
+    </div>
+    <div class="education-item">
+      <div class="edu-degree">Master's in International Business &amp; Project Management</div>
+      <div class="edu-school">EUDE Business School</div>
+      <div class="edu-year">2022</div>
+    </div></div>
+    <div class="section"><div class="section-title">Certifications</div>
+    <div class="cert-item"><span class="cert-name">Green Belt Certificate | Telus LSS Program (2026)</span></div>
+    <div class="cert-item"><span class="cert-name">Design strategy course | IDEOU (2023)</span></div>
+    <div class="cert-item"><span class="cert-name">Innovation Program: Corporate Startup | Ambidextro Peru (2022)</span></div>
+    <div class="cert-item"><span class="cert-name">Scrum for Innovative Projects Certification | ISEADE-FEPADE (2020)</span></div></div>
+    <div class="section"><div class="section-title">Languages</div>
+    <div class="lang-item"><strong>English:</strong> Professional Working Proficiency</div></div>
+  </div>
+  <footer>
+    <div class="footer-text">Presented by <strong>Sagan</strong> for <strong class="accent">Lone Star Markets</strong></div>
+    <div class="footer-sub">getsagan.com · Redefining Recruitment</div>
+  </footer>
+</body>
+</html>
