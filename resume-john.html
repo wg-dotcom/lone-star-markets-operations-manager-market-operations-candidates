@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John B. - Operations Manager (Market Operations) | Lone Star Markets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument%20Serif:wght@400;500;600;700&family=DM%20Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --primary: #c17b4e;
+      --dark: #1e2924;
+      --highlight: #c9c0b4;
+      --white: #FFFFFF;
+      --gray-50: #F8FAFB;
+      --gray-100: #F1F5F4;
+      --gray-200: #E2E8E7;
+      --gray-400: #94A3A0;
+      --gray-600: #4B5E5A;
+      --gray-700: #374845;
+      --font-heading: 'Instrument Serif', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+    }
+    body { font-family: var(--font-body); background: var(--gray-50); color: var(--dark); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    .back-link { display: block; background: var(--dark); padding: 12px 40px; font-family: var(--font-heading); font-size: 14px; font-weight: 500; }
+    .back-link a { color: var(--highlight); text-decoration: none; transition: color 0.2s; }
+    .back-link a:hover { color: var(--white); }
+    .back-link a::before { content: "\2190\00a0\00a0"; }
+    header { background: var(--dark); padding: 48px 40px 52px; position: relative; overflow: hidden; }
+    header::after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--primary), var(--highlight)); }
+    .header-brand { font-family: var(--font-heading); font-size: 32px; font-weight: 700; color: var(--white); letter-spacing: -0.5px; margin-bottom: 4px; }
+    .header-brand span { color: var(--highlight); }
+    .header-subtitle { font-family: var(--font-body); font-size: 14px; font-weight: 400; color: var(--gray-400); text-transform: uppercase; letter-spacing: 2px; }
+    .candidate-banner { background: linear-gradient(135deg, var(--primary), #c9c0b4); padding: 36px 40px; color: var(--white); }
+    .candidate-name { font-family: var(--font-heading); font-size: 28px; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 6px; }
+    .candidate-title { font-size: 16px; font-weight: 400; opacity: 0.9; margin-bottom: 12px; }
+    .candidate-contact { display: flex; flex-wrap: wrap; gap: 20px; font-size: 13px; opacity: 0.85; }
+    .resume-body { max-width: 900px; margin: 0 auto; padding: 40px 40px 60px; }
+    .section { margin-bottom: 36px; }
+    .section-title { font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1.5px; padding-bottom: 10px; border-bottom: 2px solid var(--gray-200); margin-bottom: 18px; }
+    .summary-text { font-size: 15px; color: var(--gray-700); line-height: 1.75; }
+    .skills-grid { display: grid; grid-template-columns: 170px 1fr; gap: 10px 20px; font-size: 14px; }
+    .skill-label { font-weight: 600; color: var(--dark); padding: 4px 0; }
+    .skill-value { color: var(--gray-600); padding: 4px 0; line-height: 1.6; }
+    .experience-item { margin-bottom: 24px; padding-left: 20px; border-left: 3px solid var(--primary); }
+    .experience-item:last-child { margin-bottom: 0; }
+    .exp-header { margin-bottom: 8px; }
+    .exp-role { font-family: var(--font-heading); font-size: 16px; font-weight: 700; color: var(--dark); }
+    .exp-company { font-size: 14px; font-weight: 500; color: var(--primary); }
+    .exp-meta { font-size: 13px; color: var(--gray-400); margin-top: 2px; }
+    .exp-desc { font-size: 14px; color: var(--gray-600); line-height: 1.65; }
+    .exp-bullets { font-size: 14px; color: var(--gray-600); line-height: 1.65; padding-left: 20px; margin-top: 6px; }
+    .exp-bullets li { margin-bottom: 4px; }
+    .education-item, .cert-item, .lang-item { font-size: 15px; margin-bottom: 8px; }
+    .edu-degree, .cert-name { font-weight: 600; color: var(--dark); }
+    .edu-school { color: var(--primary); font-weight: 500; }
+    .edu-year { font-size: 13px; color: var(--gray-400); }
+    footer { background: var(--dark); padding: 32px 40px; text-align: center; position: relative; }
+    footer::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--highlight)); }
+    .footer-text { font-family: var(--font-heading); font-size: 14px; color: var(--gray-400); }
+    .footer-text strong { color: var(--white); }
+    .footer-text .accent { color: var(--highlight); }
+    .footer-sub { font-size: 12px; color: var(--gray-600); margin-top: 8px; }
+    @media (max-width: 640px) {
+      header, .candidate-banner, .resume-body, .back-link, footer { padding-left: 20px; padding-right: 20px; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .candidate-contact { flex-direction: column; gap: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="back-link"><a href="index.html">Back to All Candidates</a></div>
+  <header>
+    <div class="header-brand">Lone Star Markets<span>.</span></div>
+    <div class="header-subtitle">Candidate Resume</div>
+  </header>
+  <div class="candidate-banner">
+    <div class="candidate-name">John B.</div>
+    <div class="candidate-title">Operations Manager (Market Operations) | Philippines</div>
+    <div class="candidate-contact">
+      <span>Philippines</span>
+      <span>5 yrs Operations Leadership experience</span>
+    </div>
+  </div>
+  <div class="resume-body">
+    <div class="section"><div class="section-title">Professional Summary</div><p class="summary-text">Results-driven Operations and Supply Chain professional with 15+ years of experience across customer operations, procurement, channel partnerships, and stakeholder management in multinational environments. Proven track record in developing SOPs, optimizing end-to-end workflows, and improving operational efficiency to support scalable business growth. Experienced in inventory coordination and cross-functional collaboration to ensure seamless execution of daily operations and service delivery. Strong background in performance monitoring, process improvement, data storytelling, analysis and system optimization, with a data-driven approach to identifying gaps and implementing sustainable solutions. Recognized for delivering cost savings, enhancing operational visibility, and driving continuous improvement initiatives while maintaining high levels of accuracy, reliability, and stakeholder satisfaction.</p></div>
+    <div class="section"><div class="section-title">Skills &amp; Tech Stack</div><div class="skills-grid">
+    <div class="skill-label">Operations &amp; Process Management</div>
+    <div class="skill-value">End-to-End Workflow Management, SOP Development &amp; Documentation, Operational Excellence, Process Optimization &amp; Continuous Improvement (LEAN, CI), KPI Management &amp; Performance Monitoring, Business Continuity Planning</div>
+    <div class="skill-label">Supply Chain &amp; Procurement</div>
+    <div class="skill-value">Procurement &amp; Sourcing, Vendor &amp; Contract Management, Inventory &amp; Asset Management, Demand Planning &amp; Replenishment, Cost Optimization &amp; Spend Analysis</div>
+    <div class="skill-label">Leadership &amp; Management</div>
+    <div class="skill-value">Cross-Functional Coordination, Stakeholder Management, Team Leadership, Coaching &amp; Training, Change Management &amp; Process Adoption</div>
+    <div class="skill-label">Systems &amp; Tools</div>
+    <div class="skill-value">SAP (GUI), Salesforce, Zendesk, MS 365, Google Workspace, RingCentral UCaas + CX, AI Receptionist, ChatGPT, Gemini, Copilot</div></div></div>
+    <div class="section"><div class="section-title">Work Experience</div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Partner Account Manager</div>
+        <div class="exp-company">Acquire BPO / RingCentral</div>
+        <div class="exp-meta">Nov 2023 – Mar 2026</div>
+      </div>
+      <ul class="exp-bullets"><li>Managed end-to-end partner operations, ensuring seamless execution of sales workflows, onboarding, and enablement processes.</li><li>Developed and standardized operational playbooks and partner engagement procedures to improve consistency and scalability.</li><li>Coordinated cross-functional teams (sales, marketing, operations) to ensure timely execution of campaigns, deal progression, and issue resolution.</li><li>Monitored partner performance metrics and identified process improvement opportunities to enhance efficiency and conversion rates.</li><li>Led onboarding, training, and enablement programs to improve partner operational readiness and product knowledge.</li><li>Supported pipeline management, proposal development, and deal tracking to ensure accurate reporting and visibility.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Associate Unit Manager / Financial Consultant</div>
+        <div class="exp-company">Wolf Summit Life Insurance Agency (Prulife UK)</div>
+        <div class="exp-meta">May 2018 – Apr 2025</div>
+      </div>
+      <ul class="exp-bullets"><li>Led daily sales and operational workflows for a team of 15 advisors, ensuring target achievement and process compliance.</li><li>Developed and implemented structured sales processes, training materials, and SOPs to improve team productivity and conversion rates.</li><li>Conducted financial needs analysis and managed client portfolios, ensuring accurate documentation and service delivery.</li><li>Coordinated team activities, client engagements, and reporting to maintain operational efficiency and service quality.</li><li>Monitored performance metrics and implemented continuous improvement initiatives to optimize results.</li><li>Key Achievements: Consistent top performer with multiple national-level sales recognitions. Improved team conversion rates through structured coaching and workflow standardization.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Licensing Specialist</div>
+        <div class="exp-company">NUIX</div>
+        <div class="exp-meta">Mar 2020 – Mar 2022</div>
+      </div>
+      <ul class="exp-bullets"><li>Managed global software licensing lifecycle, including sourcing, procurement, renewals, and inventory tracking.</li><li>Developed and maintained license management processes and documentation to ensure compliance and cost efficiency.</li><li>Partnered with finance and leadership to analyze spend, forecast demand, and optimize procurement strategies.</li><li>Coordinated with IT and service desk teams to ensure system reliability, license allocation, and issue resolution.</li><li>Identified inefficiencies and implemented cost-saving initiatives through vendor and subscription optimization.</li><li>Key Achievements: Reduced software costs by ~$1.4M through license consolidation and vendor optimization.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Customer Operations Support Analyst</div>
+        <div class="exp-company">Shell Business Operations</div>
+        <div class="exp-meta">Sep 2017 – Mar 2020</div>
+      </div>
+      <ul class="exp-bullets"><li>Supported end-to-end operational workflows across multiple global markets, ensuring SLA adherence and system readiness.</li><li>Developed SOPs, process documentation, and business continuity plans to support operational resilience.</li><li>Delivered forecasting, resource planning, and performance reporting to improve operational visibility.</li><li>Coordinated system rollouts and integrations, ensuring smooth transition and user readiness.</li><li>Identified process gaps and implemented continuous improvement initiatives to enhance efficiency.</li><li>Key Achievements: Led CRM migration (SAP to Zendesk), improving response time and operational efficiency. Designed SLA frameworks that improved KPI compliance across markets.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Customer Operations Specialist</div>
+        <div class="exp-company">Shell</div>
+        <div class="exp-meta">Oct 2009 – Sep 2017</div>
+      </div>
+      <ul class="exp-bullets"><li>Managed order-to-invoice processes, including order management, inventory coordination, and customer support for B2B/B2C clients.</li><li>Led continuous improvement initiatives using LEAN methodologies to address process inefficiencies and improve service quality.</li><li>Coordinated with internal teams and external stakeholders to ensure timely order fulfillment and issue resolution.</li><li>Maintained accurate records, documentation, and reporting to support operational performance tracking.</li><li>Key Achievements: Delivered process improvements generating ~$500K in cost savings. Recognized as top performer for upselling and customer engagement initiatives.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Field-Based Key Account Representative</div>
+        <div class="exp-company">Dalvys &amp; Company Inc.</div>
+        <div class="exp-meta">Apr 2009 – Oct 2009</div>
+      </div>
+      <ul class="exp-bullets"><li>Managed client accounts, sales operations, and inventory movement to ensure product availability and revenue growth.</li><li>Developed product bundling strategies to optimize inventory turnover and increase profitability.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Travel Representative Tier II (ARC)</div>
+        <div class="exp-company">ACS (Travelport)</div>
+        <div class="exp-meta">Jan 2007 – Apr 2009</div>
+      </div>
+      <ul class="exp-bullets"><li>Processed complex travel transactions, ensuring accuracy, compliance, and high service quality.</li><li>Maintained detailed documentation and followed standardized procedures for bookings, refunds, and changes.</li><li>Achievement: Promoted within one year based on accuracy and performance excellence.</li></ul>
+    </div></div>
+    <div class="section"><div class="section-title">Education</div>
+    <div class="education-item">
+      <div class="edu-degree">Bachelor of Science in Business Administration in Banking and Finance</div>
+      <div class="edu-school">Adamson University</div>
+      <div class="edu-year">2005</div>
+    </div></div>
+    
+    
+  </div>
+  <footer>
+    <div class="footer-text">Presented by <strong>Sagan</strong> for <strong class="accent">Lone Star Markets</strong></div>
+    <div class="footer-sub">getsagan.com · Redefining Recruitment</div>
+  </footer>
+</body>
+</html>
