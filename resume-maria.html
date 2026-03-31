@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maria V. - Operations Manager (Market Operations) | Lone Star Markets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument%20Serif:wght@400;500;600;700&family=DM%20Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --primary: #c17b4e;
+      --dark: #1e2924;
+      --highlight: #c9c0b4;
+      --white: #FFFFFF;
+      --gray-50: #F8FAFB;
+      --gray-100: #F1F5F4;
+      --gray-200: #E2E8E7;
+      --gray-400: #94A3A0;
+      --gray-600: #4B5E5A;
+      --gray-700: #374845;
+      --font-heading: 'Instrument Serif', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+    }
+    body { font-family: var(--font-body); background: var(--gray-50); color: var(--dark); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    .back-link { display: block; background: var(--dark); padding: 12px 40px; font-family: var(--font-heading); font-size: 14px; font-weight: 500; }
+    .back-link a { color: var(--highlight); text-decoration: none; transition: color 0.2s; }
+    .back-link a:hover { color: var(--white); }
+    .back-link a::before { content: "\2190\00a0\00a0"; }
+    header { background: var(--dark); padding: 48px 40px 52px; position: relative; overflow: hidden; }
+    header::after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--primary), var(--highlight)); }
+    .header-brand { font-family: var(--font-heading); font-size: 32px; font-weight: 700; color: var(--white); letter-spacing: -0.5px; margin-bottom: 4px; }
+    .header-brand span { color: var(--highlight); }
+    .header-subtitle { font-family: var(--font-body); font-size: 14px; font-weight: 400; color: var(--gray-400); text-transform: uppercase; letter-spacing: 2px; }
+    .candidate-banner { background: linear-gradient(135deg, var(--primary), #c9c0b4); padding: 36px 40px; color: var(--white); }
+    .candidate-name { font-family: var(--font-heading); font-size: 28px; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 6px; }
+    .candidate-title { font-size: 16px; font-weight: 400; opacity: 0.9; margin-bottom: 12px; }
+    .candidate-contact { display: flex; flex-wrap: wrap; gap: 20px; font-size: 13px; opacity: 0.85; }
+    .resume-body { max-width: 900px; margin: 0 auto; padding: 40px 40px 60px; }
+    .section { margin-bottom: 36px; }
+    .section-title { font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1.5px; padding-bottom: 10px; border-bottom: 2px solid var(--gray-200); margin-bottom: 18px; }
+    .summary-text { font-size: 15px; color: var(--gray-700); line-height: 1.75; }
+    .skills-grid { display: grid; grid-template-columns: 170px 1fr; gap: 10px 20px; font-size: 14px; }
+    .skill-label { font-weight: 600; color: var(--dark); padding: 4px 0; }
+    .skill-value { color: var(--gray-600); padding: 4px 0; line-height: 1.6; }
+    .experience-item { margin-bottom: 24px; padding-left: 20px; border-left: 3px solid var(--primary); }
+    .experience-item:last-child { margin-bottom: 0; }
+    .exp-header { margin-bottom: 8px; }
+    .exp-role { font-family: var(--font-heading); font-size: 16px; font-weight: 700; color: var(--dark); }
+    .exp-company { font-size: 14px; font-weight: 500; color: var(--primary); }
+    .exp-meta { font-size: 13px; color: var(--gray-400); margin-top: 2px; }
+    .exp-desc { font-size: 14px; color: var(--gray-600); line-height: 1.65; }
+    .exp-bullets { font-size: 14px; color: var(--gray-600); line-height: 1.65; padding-left: 20px; margin-top: 6px; }
+    .exp-bullets li { margin-bottom: 4px; }
+    .education-item, .cert-item, .lang-item { font-size: 15px; margin-bottom: 8px; }
+    .edu-degree, .cert-name { font-weight: 600; color: var(--dark); }
+    .edu-school { color: var(--primary); font-weight: 500; }
+    .edu-year { font-size: 13px; color: var(--gray-400); }
+    footer { background: var(--dark); padding: 32px 40px; text-align: center; position: relative; }
+    footer::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--highlight)); }
+    .footer-text { font-family: var(--font-heading); font-size: 14px; color: var(--gray-400); }
+    .footer-text strong { color: var(--white); }
+    .footer-text .accent { color: var(--highlight); }
+    .footer-sub { font-size: 12px; color: var(--gray-600); margin-top: 8px; }
+    @media (max-width: 640px) {
+      header, .candidate-banner, .resume-body, .back-link, footer { padding-left: 20px; padding-right: 20px; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .candidate-contact { flex-direction: column; gap: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="back-link"><a href="index.html">Back to All Candidates</a></div>
+  <header>
+    <div class="header-brand">Lone Star Markets<span>.</span></div>
+    <div class="header-subtitle">Candidate Resume</div>
+  </header>
+  <div class="candidate-banner">
+    <div class="candidate-name">Maria V.</div>
+    <div class="candidate-title">Operations Manager (Market Operations) | Colombia</div>
+    <div class="candidate-contact">
+      <span>Colombia</span>
+      <span>8 yrs Operations Leadership experience</span>
+    </div>
+  </div>
+  <div class="resume-body">
+    <div class="section"><div class="section-title">Professional Summary</div><p class="summary-text">Industrial Engineer with 10+ years of experience in operations, logistics, and supply chain coordination, supporting multi-location environments and high-volume workflows. Strong background in building and improving operational systems, managing inventory processes, and coordinating end-to-end operations to ensure reliability and efficiency. Experienced in developing SOPs, optimizing workflows, and supporting the rollout of new operational initiatives, including coordinating teams, vendors, and timelines to ensure smooth execution. Skilled in inventory planning, replenishment tracking, and maintaining operational continuity across distributed teams.</p></div>
+    <div class="section"><div class="section-title">Skills &amp; Tech Stack</div><div class="skills-grid">
+    <div class="skill-label">Technical Skills</div>
+    <div class="skill-value">Motive, Samsara, Geotab, Mandate, TMS platforms, FMCSA compliance, DOT regulations, CSA score monitoring, SAP, Fishbowl, Salesforce, HubSpot CRM, CRM systems, Microsoft Excel, Microsoft Office, Google Workspace (Docs, Sheets, Drive, Calendar), Slack, Asana, Notion, Twilio, AWS, Microsoft Teams, email management platforms</div>
+    <div class="skill-label">Core Competencies</div>
+    <div class="skill-value">Effective communication, management skills, teamwork, leadership, problem-solving, creative thinking, critical thinking, adaptability, negotiation</div></div></div>
+    <div class="section"><div class="section-title">Work Experience</div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Safety Coordinator</div>
+        <div class="exp-company">Coverfleet LLC (Remote)</div>
+        <div class="exp-meta">July 31th, 2024 - September 5th, 2025</div>
+      </div>
+      <ul class="exp-bullets"><li>Provided safety, compliance, and operational monitoring for multiple U.S. trucking companies, supporting fleets of 100–150 drivers across different carriers and ensuring regulatory compliance and fleet continuity.</li><li>Key Responsibilities: Monitored vehicle activity, route adherence, and driver behavior in real time using Motive (GoMotive), Transflo/Transara, Geotab, and Mandate ELD platforms.</li><li>Conducted daily HOS log reviews to ensure FMCSA and DOT compliance, identifying violations and implementing corrective actions. Acted as a primary contact during operational incidents (breakdowns, accidents, roadside inspections), coordinating with drivers, dispatch, and management. Performed driver coaching and safety improvement plans to reduce violations and improve CSA scores. Monitored safety events (speeding, harsh braking, distracted driving) and provided corrective guidance.</li><li>Coordinated preventive maintenance and DOT Annual Inspections to maintain fleet compliance and uptime. Investigated and documented incidents and safety events, preparing reports for compliance and insurance purposes. Managed and audited Driver Qualification Files (DQ Files). Collaborated with dispatch, operations teams, and vendors to resolve disruptions and minimize downtime. Supported driver onboarding, ensuring completion of compliance documentation and safety training.</li><li>Prepared weekly and monthly safety and compliance reports, identifying trends and improvement opportunities.</li><li>Key Impact: Contributed to improving CSA safety scores through proactive compliance monitoring, driver coaching, and safety audits. Maintained operational continuity through rapid incident response and coordination with dispatch and drivers.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Logistics Coordinator</div>
+        <div class="exp-company">Global Connect &amp; Falcon - Dlivrd (Remote)</div>
+        <div class="exp-meta">August 28th, 2023 - April 5th, 2024</div>
+      </div>
+      <p class="exp-desc">Successfully coordinate deliveries of catering orders for multinational food restaurant franchises and catering companies, create optimal routes to improve the productivity of our drivers' trips. Review drivers' scores for customer order assignments, review the requests of our clients (catering partners and drivers).</p>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Logistics coordinator</div>
+        <div class="exp-company">Lean Solutions Group - CONVOY (Remote)</div>
+        <div class="exp-meta">September 13th, 2021 - September 7th, 2023</div>
+      </div>
+      <p class="exp-desc">Coordinate and supervise supply chain operations to ensure efficient scheduling of product pickup and delivery. Identify opportunities for continuous improvement in logistics operations, resulting in optimized customer service, business profitability and productivity. Provide solutions for incidents during scheduling and delivery processes. Track product shipments, costs, and timelines according to established requirements. Resolve shipping and inventory issues to ensure smooth operations. Analyze data, suggest modifications, and propose improvements to optimize the company's logistics operation. Report progress on assigned projects, their results, and actions for improvement.</p>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Logistics and Dispatch Manager</div>
+        <div class="exp-company">Indulacteos de Colombia SAS</div>
+        <div class="exp-meta">january 14th, 2019 - June 30th, 2021 (Bucaramanga)</div>
+      </div>
+      <p class="exp-desc">Performed proper management for timely arrival of raw materials to maintain the supply of materials to the production department. Sourced appropriate suppliers for merchandise transportation, evaluating costs, lead times, insurance, among others. Conducted daily inventory verification, coordinated regional dispatches using company-owned vehicles, and organized efficient dispatches for customers purchasing at the facilities. Coordinated nationwide merchandise delivery to our clients.</p>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Consultant in integrated management systems and human resources</div>
+        <div class="exp-company">VAB Consultores Integrales SAS</div>
+        <div class="exp-meta">July 4th, 2016 to May 15th, 2017 (Bucaramanga)</div>
+      </div>
+      <p class="exp-desc">Provided guidance to affiliated companies regarding current regulations, integrated management systems and their review, project management, contracting, manuals and procedures, continuous improvement, monitoring, control, and audits.</p>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Quality Coordinator HSE Inspector</div>
+        <div class="exp-company">Alfredo Amaya H CIA LTDA</div>
+        <div class="exp-meta">March 18th, 2015, to May 13th, 2016 (Floridablanca)</div>
+      </div>
+      <p class="exp-desc">Designed procedures and instructions, maintained the quality management system, made necessary changes and updates for the company's performance, processed and handled PQGs (Product Quality Guarantees), implemented corrective, preventive, and improvement actions as required. Conducted follow-up meetings with contractors, communicated changes made to the quality management system, scheduled HSE (Health, Safety, and Environment) activities for the construction site, developed programs to ensure the health and safety of workers, closely monitored concrete quality and conducted sample tracking. Monitored the water treatment plant for maintenance and water sampling results. Designed pre-operational plans, created an HSE manual for contractors, and developed an emergency response plan. Supervised proper brick production, stucco application, and material consumption.</p>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Administrative Coordinator</div>
+        <div class="exp-company">Via Seguros – AXA Colpatria</div>
+        <div class="exp-meta">January 20th, 2014, to October 3th, 2014 (B/bermeja)</div>
+      </div>
+      <p class="exp-desc">Planning, programs, and procedures, staff recruitment, organizational climate activities to reduce conflicts, audits, payroll, debt recovery, ensuring timely delivery to contractors, ensuring proper performance of assistants, monitoring internal and external insurance consultants' goal achievement, verifying the quality of issued policies, contract analysis, providing guidance and training to staff for effective and efficient performance, delivering monthly and annual comparative reports, performance indicators, employee incentive plans.</p>
+    </div></div>
+    <div class="section"><div class="section-title">Education</div>
+    <div class="education-item">
+      <div class="edu-degree">Specialization in Integrated Logistics</div>
+      <div class="edu-school">UDI</div>
+      <div class="edu-year">August 15th, 2014</div>
+    </div>
+    <div class="education-item">
+      <div class="edu-degree">Bachelor's Degree in Industrial Engineering</div>
+      <div class="edu-school">UDI</div>
+      <div class="edu-year">March 7th, 2014</div>
+    </div></div>
+    <div class="section"><div class="section-title">Certifications</div>
+    <div class="cert-item"><span class="cert-name">QUALITY MANAGEMENT ISO 9001:2015 - 120-hour program, Politecnico de Colombia</span></div>
+    <div class="cert-item"><span class="cert-name">PROJECT MANAGEMENT - 120-hour program, Politecnico de Colombia</span></div>
+    <div class="cert-item"><span class="cert-name">PROCESS MANAGEMENT - 120-hour program, Politecnico de Colombia</span></div>
+    <div class="cert-item"><span class="cert-name">AUDITING OF MANAGEMENT SYSTEMS ISO 19011:2018 - 120-hour program, Politecnico de Colombia</span></div>
+    <div class="cert-item"><span class="cert-name">PROJECT QUALITY MANAGAMENT - Northern Essex Community College, Massachusetts, February 1st, 2018 - March 08th, 2018</span></div>
+    <div class="cert-item"><span class="cert-name">ENGLISH FOR SPEAKERS OF OTHERS LANGUAGES ESOL - Northern Essex Community College, Massachusetts, September 06th, 2017 - May 21th, 2018</span></div>
+    <div class="cert-item"><span class="cert-name">AUDITOR IN INTEGRATED MANAGEMENT SYSTEMS HSEQ, ISO 9001:2008, ISO</span></div></div>
+    
+  </div>
+  <footer>
+    <div class="footer-text">Presented by <strong>Sagan</strong> for <strong class="accent">Lone Star Markets</strong></div>
+    <div class="footer-sub">getsagan.com · Redefining Recruitment</div>
+  </footer>
+</body>
+</html>
